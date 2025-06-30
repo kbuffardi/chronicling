@@ -249,16 +249,29 @@ about teamwork that are not already revealed by other metrics?
 
 Investigating each team's median student:
 
-`Regression ~ Median_Artifacts + Median_Consistency + Gini_Artifacts + Gini_Consistency`
+`Median_Artifacts + Median_Consistency + Gini_Artifacts + Gini_Consistency`
 
 `Cohesiveness = 3.514 + 0.575 * Median_Consistency`
+
 `Conflict = 1.645 + 0.007 * Median_Artifacts - 0.727651 * Median_Consistency`
 
 [comment]: # (||| data-auto-animate)
 
 #### Going Forward
 
+- Alternative metrics for "consistency"
+- Consistency's impact 
+  - product quality
+  - productivity
+  - [DevOps Research and Assessment (DORA)](https://dora.dev/)
+- Interventions for encouraging consistent, *impactful* contributions
 
+[comment]: # (||| data-auto-animate)
+
+#### Acknowledgements
+
+- Special thanks to Sandesh Sobarad for preliminary work on GitHub API data mining
+- This material is based upon work partially supported by the [National Science Foundation under grant #2337271](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2337271)
 
 [comment]: # (!!!)
 
