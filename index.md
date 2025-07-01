@@ -17,44 +17,14 @@
 #### Chronicling Consistency and Parity of Contributions to Software Engineering Team Projects
 ----------
 
-Kevin Buffardi, Rahul Bijoor, Aviral Kumar Srivastava, Tamanjeet Kaur Sidhu, Shalavritha Mamunooru, Aditi More
+<sub>Kevin Buffardi, Rahul Bijoor, Aviral Kumar Srivastava, Tamanjeet Kaur Sidhu, Shalavritha Mamunooru, Aditi More</sub>
 
-<img src="qr-chronicling.svg" alt="QR code for this presentation" width="30%">
+<img src="qr-chronicling.svg" alt="QR code for this presentation" width="20%">
 </img>
 
-<sub>[LearnByFailure.com](https://learnbyfailure.com/chronicling/)</sub>
+<sub>[LearnByFailure.com/chronicling](https://learnbyfailure.com/chronicling/)</sub>
 
 [comment]: # (!!!)
-
-#### Software Engineering Education
-
-- Team projects provide experiential learning
-
-[comment]: # (||| data-auto-animate)
-
-#### Software Engineering Education
-
-- Team projects provide experiential learning
-- Agile software development principles
-
-[comment]: # (||| data-auto-animate)
-
-#### Software Engineering Education
-
-- Team projects provide experiential learning
-- Agile software development principles
-- <u>M</u>inimum <u>V</u>iable <u>P</u>roduct
-
-[comment]: # (||| data-auto-animate)
-
-#### Software Engineering Education
-
-- Team projects provide experiential learning
-- Agile software development principles
-- <u>M</u>inimum <u>V</u>iable <u>P</u>roduct
-- Incremental delivery-and-discovery (Scrum sprint)
-
-[comment]: # (||| data-auto-animate)
 
 #### Software Engineering Education
 
@@ -66,10 +36,6 @@ Kevin Buffardi, Rahul Bijoor, Aviral Kumar Srivastava, Tamanjeet Kaur Sidhu, Sha
 
 [comment]: # (||| data-auto-animate)
 
-### How to fairly and accurately evaluate individuals in a team?
-
-[comment]: # (!!!)
-
 #### Common Approaches to Evaluating Individuals
 
 - Team Grades
@@ -80,41 +46,9 @@ Kevin Buffardi, Rahul Bijoor, Aviral Kumar Srivastava, Tamanjeet Kaur Sidhu, Sha
 
 #### Unintended Outcomes
 
-**Team Grades**
-
-[comment]: # (||| data-auto-animate)
-
-#### Unintended Outcomes
-
-**Team Grades**
-- Social loafing, responsibility hoarding
-
-[comment]: # (||| data-auto-animate)
-
-#### Unintended Outcomes
-
-**Peer/Self Evaluation**
-
-[comment]: # (||| data-auto-animate)
-
-#### Unintended Outcomes
-
-**Peer/Self Evaluation**
-- Collusion, personal biases
-
-[comment]: # (||| data-auto-animate)
-
-#### Unintended Outcomes
-
-**Data Mining for Contribution Quantity**
-
-[comment]: # (||| data-auto-animate)
-
-#### Unintended Outcomes
-
-**Data Mining for Contribution Quantity**
-- Sacrificing quality for quantity
-- Procrastinating
+- **Team Grades**: Social loafing, responsibility hoarding
+- **Peer/Self Evaluation**: Collusion, personal biases
+- **Quantity**: Sacrificing quality, procrastination
 
 [comment]: # (||| data-auto-animate)
 
@@ -122,11 +56,7 @@ Kevin Buffardi, Rahul Bijoor, Aviral Kumar Srivastava, Tamanjeet Kaur Sidhu, Sha
 
 - Inactive or "lone wolf" members
   - Should contribute iteratively
-  - Looking for "Signs of life"
-
-[comment]: # (|||)
-
-#### Investigating Contribution Consistency
+  - Looking for "signs of life"
 
 [comment]: # (!!!)
 
@@ -140,8 +70,8 @@ Kevin Buffardi, Rahul Bijoor, Aviral Kumar Srivastava, Tamanjeet Kaur Sidhu, Sha
 #### Consistency
 
 Data mined team repositories (via GitHub API)
-- Counted artifacts:
-  - Issue creation
+- Counted artifacts authored:
+  - Issue
   - Commits
   - Pull Requests
   - Code Reviews
@@ -180,13 +110,12 @@ Gini Index
 <img src="Gini-Coefficient.png" alt="Gini coefficient is the proportion of the area under the line of perfect equality and above the Lorenz curve, relative to the total area under the line of perfect equality" width="100%">
 </img>
 
-[comment]: # (||| data-auto-animate)
+[comment]: # (!!!)
 
 #### Investigating Contribution Consistency
 
-**RQ1** Is team parity of <u>total contributions</u> and/or <u>consistency of
-contributions</u> associated with team cohesiveness or lack of
-conflict?
+**RQ1** Is team <u>parity</u> of <u>total</u> contributions and/or <u>consistency</u> of
+contributions associated with team <u>cohesiveness</u> or lack of <u>conflict</u>?
 
 [comment]: # (||| data-auto-animate)
 
@@ -216,16 +145,12 @@ Spearman &rho; Correlations
 <img src="Correlations.png" alt="Gini coefficient of either Consistency or Total Artifacts have no significant associations with team conflict or cohensiveness" width="100%">
 </img>
 
-[comment]: # (|||)
-
-#### Does consistency tell us anything?
-
 [comment]: # (!!!)
 
 #### Consistency
 
 **RQ2** What unique insights may contribution consistency provide
-about teamwork that are not already revealed by other metrics?
+about teamwork that are *not already revealed by other metrics*?
 
 [comment]: # (||| data-auto-animate)
 
@@ -239,7 +164,7 @@ about teamwork that are not already revealed by other metrics?
 #### Consistency
 
 - 12% (n=55) students contributed only during a single week of the semester
-  - *Not* only students who contributed at the very end (n=15, 27%)
+  - *Not* only students who contributed at the very end (n=15)
 - Maybe teams have different internal cultures
   - Rhythm of sharing contributions
 
@@ -247,13 +172,18 @@ about teamwork that are not already revealed by other metrics?
 
 #### Consistency
 
-Investigating each team's median student:
+Investigating each team's **median student**:
 
+<sub>Regression:
 `Median_Artifacts + Median_Consistency + Gini_Artifacts + Gini_Consistency`
+</sub>
+<hr/>
 
-`Cohesiveness = 3.514 + 0.575 * Median_Consistency`
+`Cohesiveness = 3.514 + 0.575*Median_Consistency`
 
-`Conflict = 1.645 + 0.007 * Median_Artifacts - 0.727651 * Median_Consistency`
+<hr/>
+
+`Conflict = 1.645 + 0.007*Median_Artifacts - 0.727651*Median_Consistency`
 
 [comment]: # (||| data-auto-animate)
 
