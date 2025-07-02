@@ -38,10 +38,15 @@ series = {ITiCSE 2025}
 }
 ```
 
+## Data and Instrument
+
+The code for data gathering as well as an anonymized version of the project is available on GitHub at [ChicoState/chronicle](https://github.com/ChicoState/chronicle)
+
 
 ## Presentation
 
 The slides can be viewed in a web browser by opening [index.html](index.html) or as hosted at [learnbyfailure.com/chronicling/](https://learnbyfailure.com/chronicling/).
+
 
 ## Rebuild HTML
 
